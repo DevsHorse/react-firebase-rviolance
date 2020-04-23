@@ -59,7 +59,7 @@ class App extends Component {
             </Route>
 
             <Route path='/edit' >
-              <EditPage userId={this.state.userId}/>
+              {this.state.user ? (<EditPage userId={this.state.userId}/>) : <Redirect to="/login" />}
             </Route>
 
             <Route path='/edit-or-create' component={EditOrCreatePage} />
