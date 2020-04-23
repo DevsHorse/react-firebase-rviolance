@@ -1,0 +1,32 @@
+body {
+  font-family: Roboto, sans-serif;
+  background: linear-gradient(45deg, #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%);
+}
+a {
+  text-decoration: none;
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.section {
+  height: 100vh;
+  overflow: hidden;
+}
+li > div {
+  min-height: 45px;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #adbf39 0%,#ef696b 25%,#a53884 43%,#a54a8a 55%,#2d79b7 74%,#38e06a 100%);
+  border-bottom: 1px solid #666;
+}
+
+.createBtn {
+  /* background:  linear-gradient(45deg, #8a47c1 0%,#ce04e0 100%); */
+  font-size: 16px;
+  padding: 2px 10px;
+}
+
+.fz-14 {
+  font-size: 14px;
+}
