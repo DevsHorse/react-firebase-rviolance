@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.9df2566e.chunk.css",
-    "main.js": "/static/js/main.187b5e86.chunk.js",
-    "main.js.map": "/static/js/main.187b5e86.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d3a82e94.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d3a82e94.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.17aad860.chunk.js": "/static/js/2.17aad860.chunk.js",
-    "static/js/2.17aad860.chunk.js.map": "/static/js/2.17aad860.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.59755c11ce4327a72a7d2611388b1267.js": "/precache-manifest.59755c11ce4327a72a7d2611388b1267.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.9df2566e.chunk.css.map": "/static/css/main.9df2566e.chunk.css.map",
-    "static/js/2.17aad860.chunk.js.LICENSE.txt": "/static/js/2.17aad860.chunk.js.LICENSE.txt"
+    "main.css": "/react-firebase-rviolance/static/css/main.9df2566e.chunk.css",
+    "main.js": "/react-firebase-rviolance/static/js/main.187b5e86.chunk.js",
+    "main.js.map": "/react-firebase-rviolance/static/js/main.187b5e86.chunk.js.map",
+    "runtime-main.js": "/react-firebase-rviolance/static/js/runtime-main.5999af8b.js",
+    "runtime-main.js.map": "/react-firebase-rviolance/static/js/runtime-main.5999af8b.js.map",
+    "static/css/2.de424728.chunk.css": "/react-firebase-rviolance/static/css/2.de424728.chunk.css",
+    "static/js/2.616561e4.chunk.js": "/react-firebase-rviolance/static/js/2.616561e4.chunk.js",
+    "static/js/2.616561e4.chunk.js.map": "/react-firebase-rviolance/static/js/2.616561e4.chunk.js.map",
+    "index.html": "/react-firebase-rviolance/index.html",
+    "precache-manifest.94a20e792c61bdd9f8ba20d65cb462fd.js": "/react-firebase-rviolance/precache-manifest.94a20e792c61bdd9f8ba20d65cb462fd.js",
+    "service-worker.js": "/react-firebase-rviolance/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/react-firebase-rviolance/static/css/2.de424728.chunk.css.map",
+    "static/css/main.9df2566e.chunk.css.map": "/react-firebase-rviolance/static/css/main.9df2566e.chunk.css.map",
+    "static/js/2.616561e4.chunk.js.LICENSE.txt": "/react-firebase-rviolance/static/js/2.616561e4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3a82e94.js",
+    "static/js/runtime-main.5999af8b.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.17aad860.chunk.js",
+    "static/js/2.616561e4.chunk.js",
     "static/css/main.9df2566e.chunk.css",
     "static/js/main.187b5e86.chunk.js"
   ]
