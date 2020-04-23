@@ -8,7 +8,7 @@ const TodoHeader = props => {
 
   const logOut = () => {
     fire.auth().signOut();
-    history.push('/login');
+    history.goBack();
   };
 
   const createBtnData = {
