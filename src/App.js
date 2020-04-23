@@ -40,7 +40,7 @@ class App extends Component {
 
     return (
       <div>
-        <Router history={history}>
+        <Router history={history} basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/">
               {this.state.user ? <Redirect to="/home" /> : <Redirect to="/login" />}
