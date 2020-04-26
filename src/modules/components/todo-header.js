@@ -26,12 +26,18 @@ const TodoHeader = props => {
         <h1>RViolance</h1>
       </div>
       <div className="col">
-        <Link to={createBtnData}><button className="btn text-white btn-dark createBtn">Add new</button></Link>
+        <Link to={createBtnData}>
+          <button className="btn text-white btn-dark createBtn">Add new</button>
+        </Link>
       </div>
       <div className="col">
         <div className="row justify-content-center align-items-center"> 
-          <div className="user-name  font-size-18">{props.userName}</div>
-          <button className="btn btn-dark btn-sm ml-2" onClick={logOut}>Log out</button>
+          <div className="user-name  font-size-18">
+            {props.userName}
+          </div>
+          <button 
+            className="btn btn-dark btn-sm ml-2" 
+            onClick={logOut}>Log out</button>
         </div>
       </div>
     </div>

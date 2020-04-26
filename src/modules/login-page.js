@@ -2,8 +2,6 @@ import LoginForm from './components/login/login-form';
 import React, { Component }from 'react';
 import fire from '../config/Fire-config';
 
-
-
 class LoginPage extends Component {
   constructor(props) {
     super(props);

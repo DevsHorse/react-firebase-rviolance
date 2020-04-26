@@ -11,10 +11,18 @@ class EditOrCreatePage extends Component {
   }
 
   state = {
-    title: this.props.location.state.item ? this.props.location.state.item.title : '',
-    description: this.props.location.state.item ? this.props.location.state.item.description : '',
-    deadline: this.props.location.state.item ? this.props.location.state.item.deadline : '',
-    done: this.props.location.state.item ? this.props.location.state.item.done : false
+    title: 
+    this.props.location.state.item ?
+     this.props.location.state.item.title : '',
+    description:
+     this.props.location.state.item ?
+      this.props.location.state.item.description : '',
+    deadline: 
+     this.props.location.state.item ?
+      this.props.location.state.item.deadline : '',
+    done:
+     this.props.location.state.item ?
+      this.props.location.state.item.done : false
   }
 
   handleSend() {
@@ -35,7 +43,7 @@ class EditOrCreatePage extends Component {
 
       this.props.history.goBack();
     } else if (this.pageSuccessBtn === 'Save') {
-      fire.database().ref('users/' + userId + '/' + 'todos/' + this.itemId).update({
+      fire.database().ref('users/' + userId + '/todos/' + this.itemId).update({
         title: this.state.title,
         description: this.state.description,
         deadline: this.state.deadline,
@@ -49,7 +57,6 @@ class EditOrCreatePage extends Component {
   handleChange = e => {
     this.setState({[e.target.name]: e.target.value});
   };
-
 
   render() {      
     return (
@@ -65,7 +72,14 @@ class EditOrCreatePage extends Component {
                     <div className="col">
                       <div className="form-group">
                         <label htmlFor="title">Title:</label>
-                        <input id="title" type="text" className="form-control" placeholder="Title" onChange={this.handleChange} name='title' value={this.state.title}/>
+                        <input
+                          id="title"
+                          type="text"
+                          className="form-control"
+                          placeholder="Title"
+                          onChange={this.handleChange}
+                          name='title'
+                          value={this.state.title}/>
                       </div>
                     </div>
                   </div>
@@ -74,7 +88,12 @@ class EditOrCreatePage extends Component {
                     <div className="col">
                       <div className="form-group">
                         <label htmlFor="description">Description</label>
-                        <textarea className="form-control" id="description" rows="3" onChange={this.handleChange} name='description' value={this.state.description}></textarea>
+                        <textarea
+                          className="form-control"
+                          id="description" rows="3"
+                          onChange={this.handleChange}
+                          name='description'
+                          value={this.state.description}></textarea>
                       </div>
                     </div>
                   </div>
@@ -83,7 +102,15 @@ class EditOrCreatePage extends Component {
                     <div className="col">
                       <div className="form-group">
                         <label className="d-inline-block" htmlFor="inputDate">Deadline:</label>
-                         <input id="inputDate" type="datetime-local" className="form-control" placeholder="Time or date" onChange={this.handleChange} name='deadline' value={this.state.deadline} required/>
+                         <input
+                            id="inputDate"
+                            type="datetime-local"
+                            className="form-control"
+                            placeholder="Time or date"
+                            onChange={this.handleChange}
+                            name='deadline'
+                            value={this.state.deadline}
+                            required/>
                       </div>
                     </div>
                   </div>
@@ -91,10 +118,14 @@ class EditOrCreatePage extends Component {
 
                   <div className="row justify-content-center">
                     <div className="col-3">
-                      <button type="button" className="btn btn-success btn-block" onClick={this.handleSend.bind(this)}>{this.pageSuccessBtn}</button>
+                      <button type="button"
+                       className="btn btn-success btn-block"
+                        onClick={this.handleSend.bind(this)}>{this.pageSuccessBtn}</button>
                     </div>
                     <div className="col-3">
-                      <button type="button" className="btn btn-danger btn-block" onClick={() => this.props.history.goBack()}>Back</button>
+                      <button type="button"
+                       className="btn btn-danger btn-block"
+                        onClick={() => this.props.history.goBack()}>Back</button>
                     </div>
                   </div>
 

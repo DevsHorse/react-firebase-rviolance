@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import fire from 'firebase';
 import { useHistory } from 'react-router-dom';
 
-
 const HomePageController = props => {
 
   let [options, setOptions] = useState({});
@@ -21,9 +20,6 @@ const HomePageController = props => {
           });
       });
     }
-    // return () => {
-    //   fire.database().ref('/users/' + props.userId).off();
-    // };
   }, []);
 
   return (

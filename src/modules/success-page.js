@@ -23,7 +23,9 @@ class Success extends Component {
             <h1 className="text-white text-center">Register complited!</h1>
             <div className="row justify-content-center">
               <div className="col-4">
-                <button className="btn btn-sm btn-dark mb-2 btn-block" onClick={() => this.redirectToHomePage(0)}>Continue</button>
+                <button
+                 className="btn btn-sm btn-dark mb-2 btn-block"
+                  onClick={() => this.redirectToHomePage(0)}>Continue</button>
               </div>
             </div>
           </div>

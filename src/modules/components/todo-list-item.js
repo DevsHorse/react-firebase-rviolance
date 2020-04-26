@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import fire from '../../config/Fire-config';
 
-
 const TodoListItem = props => {
  
   let item = props.options;
@@ -40,8 +39,15 @@ const TodoListItem = props => {
     if (props.prevPath === '/edit') return (
       <div className="row justify-content-end">
         <div className="col">
-          <Link to={editBtnData}><button className={`btn ${editColor} text-white fz-14 mr-1`} style={{padding: '1px 5px'}}>Edit</button></Link>
-          <button style={{padding: '1px 5px'}} className={`btn ${deleteColor} fz-14 text-white`} onClick={deleteBtn}>Delete</button>
+          <Link to={editBtnData}>
+            <button 
+              className={`btn ${editColor} text-white fz-14 mr-1`} 
+              style={{padding: '1px 5px'}}>Edit</button>
+          </Link>
+          <button
+            style={{padding: '1px 5px'}} 
+            className={`btn ${deleteColor} fz-14 text-white`} 
+            onClick={deleteBtn}>Delete</button>
         </div>
       </div>
       
@@ -53,14 +59,17 @@ const TodoListItem = props => {
       return (
         <span>
           {item.description.substring(0, 18)}
-          <a href='#' style={{color: '#fff', textDecoration: 'none'}} onClick={
-            e => {
-              if (e.target.text === '...') {
-                e.target.text = item.description.substring(18);
-              } else {
-                e.target.text = '...';
-              }
-            }} >...</a>
+          <a
+            href='#'
+            style={{color: '#fff', textDecoration: 'none'}} 
+            onClick={
+              e => {
+                if (e.target.text === '...') {
+                  e.target.text = item.description.substring(18);
+                } else {
+                  e.target.text = '...';
+                }
+            }}>...</a>
         </span>
       );
     } else {
@@ -70,18 +79,22 @@ const TodoListItem = props => {
  
   return (
     <li className="mb-2 fz-14">
-      <div style={{minHeight: '20px'}} className={`row justify-content-start align-items-center rounded p-1 text-white ${bgColor}`}>
+      <div
+        style={{minHeight: '20px'}}
+        className={`row justify-content-start align-items-center rounded p-1 text-white ${bgColor}`}>
+
         <div className="col">
           <div className="custom-control custom-checkbox d-inline-block">
             <input type="checkbox"
-            className="custom-control-input"
-              id={props.id} name="title"
-                onChange={(e) => {
-                  fire.database().ref('/users/' + props.userId + '/todos/' + props.id).update({
-                        done: e.target.checked
-                  });
-                }}
-                checked={item.done}/>
+              className="custom-control-input"
+              id={props.id}
+              name="title"
+              onChange={(e) => {
+                fire.database().ref('/users/' + props.userId + '/todos/' + props.id).update({
+                      done: e.target.checked
+                });
+              }}
+              checked={item.done}/>
             <label className="custom-control-label" htmlFor={props.id}>{item.title}</label>
           </div>
         </div>

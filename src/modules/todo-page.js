@@ -1,7 +1,6 @@
 import HomePageController from './home-page-controller';
 import React, { Component }from 'react';
 
-
 class TodoPage extends Component {
   constructor(props) {
     super(props);

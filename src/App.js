@@ -6,12 +6,12 @@ import Success from './modules/success-page';
 import EditPage from './modules/edit-page';
 import EditOrCreatePage from './modules/editOrCreate-page';
 
-
 import React, { Component }from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
 
+
+const history = createBrowserHistory();
 
 class App extends Component {
   constructor() {

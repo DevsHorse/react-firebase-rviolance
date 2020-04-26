@@ -19,8 +19,6 @@ class RegisterPage extends Component {
     this.setState({[e.target.name]: e.target.value});
   };
 
-        
-
   register = e => {
     e.preventDefault();
     if (this.state.name !== 'admin-root') {
